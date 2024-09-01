@@ -1,0 +1,47 @@
+.work__card button hr{
+    height: 80%;
+}
+
+.work__card button{
+    font-size: 1rem;
+}
+
+.work__titles button{
+    font-size: 1rem;
+}
+
+.work__titles button hr{
+    height: 80%;
+}
+
+.work__card button i{
+    font-size: 1rem;
+}
+
+.work__titles h1{
+    font-size: 2rem;
+}
+
+.work__card h1{
+    font-size: 1.6rem;
+}
+
+.work__card i{
+    font-size: 3rem;
+}
+
+.work__card ul p{
+    font-size: 1.2rem;
+}
+
+.work__card ul li{
+    font-size: 0.8rem;
+}
+
+.work__card p{
+    font-size: 0.8rem;
+}
+
+.work__card h2{
+    font-size: 1.6rem;
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/animate.css">
+
+    <link rel="stylesheet" href="src/components/Navbar/index.css">
+    <link rel="stylesheet" href="src/components/Navbar/sizes.css">
+    <link rel="stylesheet" href="src/components/Footer/index.css">
+    <link rel="stylesheet" href="src/components/Home/index.css">
+    <link rel="stylesheet" href="src/components/Home/sizes.css">
+    <link rel="stylesheet" href="src/components/Sites/index.css">
+    <link rel="stylesheet" href="src/components/Sites/sizes.css">
+    <link rel="stylesheet" href="src/components/Work/index.css">
+    <link rel="stylesheet" href="src/components/Work/sizes.css">
+
+    <title>Aleph Ramos | Desenvolvedor Web</title>
+
+</head>
+<body>
+   
+    <!-- 
+    Ideia:
+    Colocar os icons relacionados a cada um e colocar o texto para cada, os links serão de acordo com cada parte do site, e irá atualizar a cor do icon/texto conforme eu rolo para baixo e passo para a seção especifica. 
+    -->
+<div class="cursor" id="cursor"></div>
+<div class="home__background"></div>
+
+<nav class="nav">
+    <hr class="nav__line">
+        <span>All rights reserved</span>
+    <hr class="nav__line">
+        <div class="nav__links">
+            <ul id="sobre">
+                <a href="#home">
+                <li><i class="fa-solid fa-hashtag"></i></li>
+                <li>Aleph</li></a>
+            </ul>
+            <ul id="sites">
+                <a href="#web">
+                <li><i class="fa-solid fa-code"></i></li>
+                <li>Sites</li></a>
+            </ul>
+            <ul id="servicos">
+                <a href="#work">
+                <li><i class="fa-regular fa-address-card"></i></li>
+                <li>Plano</li></a>
+            </ul>
+            <ul id="contato">
+                <a href="#">
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+                <li>Falar</li></a>
+            </ul>
+        </div>
+    <hr class="nav__line">
+        <span>by aleph &copy 2024</span>
+    <hr class="nav__line">
+</nav>
+
+    <!--
+    Ideia:
+    Colocar "desenvolvedor WEB" como um card
+    Colocar meu nome e um pouco um convite de boas vindas ao meu portifolio, e colocar uma cta
+    Colocar uma foto minhas em 3d, com manipulação de quadrados
+    Colocar minhas redes sociais em formas de icons perto da minha foto
+    Colocar elementos absolutos animados
+
+    -->
+
+<header class="home" id="home">
+    <section class="home__left">
+        <header class="home__profile  animate animate-up">
+            <i class="fa-solid fa-code"></i>
+            <p id="typed-text">Desenvolvedor Web | Front End</p>
+        </header>
+        <main class="home__texts">
+            <h1 class="animate animate-left"><b>Desenvolva um site</b> e veja seu negócio crescer</h1>
+            <p class=" animate animate-up">Eu, Aleph Ramos, vou criar o site que vai <b>destacar</b> sua marca e <b style="background-color: transparent;">aumentar a sua visibilidade.</b> Mas antes, conheça um pouco sobre todo o meu trabalho.</p>
+            <div class="home__container">
+                <section class="animate animate-zoom-in">
+                    <i class="fa-solid fa-user-check"></i>
+                    <p>Clientes satisfeitos</p>
+                    <hr>
+                    <span data-target="14">0</span>
+                </section>
+                <section class="animate animate-zoom-in">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <p>Projetos concluídos</p>
+                    <hr>
+                    <span data-target="39">0</span>
+                </section>
+                <section class="animate animate-zoom-in">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <p>Linhas código</p>
+                    <hr>
+                    <span data-target="122902">0</span>
+                </section>
+            </div>
+            <button id="scroll-to-web" class="animate animate-fade-up">
+                <i class="fa-solid fa-star"></i>
+                <hr>
+                Conhecer agora!
+            </button>
+            <span class="home__down">
+                <i class="fa-solid fa-angles-down"></i>
+            </span>
+        </main>
+    </section>
+    <section class="home__right animate animate-fade-in">
+        <nav>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </nav>
+        <header class="home__image animate animate-fade-up">
+            <img src="assets/images/sites.png" alt="foto do aleph ramos">
+        </header>
+    </section>
+</header>
+
+<section class="web" id="web">
+    <main class="web__container">
+        <button class="web__cta animate animate-fade-in" id="scroll-to-work">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <hr>
+            Fazer orçamento
+        </button>
+        <nav class="web__nav animate animate-left">
+            <button class="web__btn active" data-target="landingPages"><i class="fa-solid fa-mobile"></i>Landing Pages</button>
+            <button class="web__btn" data-target="institucional"><i class="fa-solid fa-building"></i>Institucional</button>
+            <button class="web__btn" data-target="ecommerce"><i class="fa-solid fa-cart-shopping"></i>E-commerce</button>
+            <button class="web__btn" data-target="criativos"><i class="fa-solid fa-code-branch"></i>Criativos</button>
+        </nav>
+        <div class="web__container__center">
+            <section class="web__title">
+                <h1 class="animate animate-fade-in"><b>Entenda</b> como trabalho</h1>
+                <p class="animate animate-fade-up">Trabalho de forma <b>rápida e eficiente</b> para atender aos requisitos solicitados, garantindo resultados que atendem <b style="background-color: transparent; font-weight: 800;">às suas necessidades.</b> Meu portfólio de sites é atualizado constantemente, filtrando sempre os projetos de <b>alta qualidade.</b></p>
+                <span class="sites__down">
+                    <i class="fa-solid fa-angles-down scroll-to-work-down"></i>
+                </span>
+            </section>
+            <header class="web__cards animate animate-fade-in">
+                <div class="web__content" id="landingPages">
+                    <div class="web__slider">
+                        <div class="web__slider__container">
+                        <div class="web__card"> <!-- Card 1 -->
+                            <img src="assets/images/wizard_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_wizards.svg" alt="logo">
+                                <h2>WizardZ Company LTDA.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/wizardz/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 2 -->
+                            <img src="assets/images/yellow_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_yellow.svg" alt="logo">
+                                <h2>Yellow Airplane LTDA.</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/yellow/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 3 -->
+                            <img src="assets/images/leange_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_leange.webp" alt="logo">
+                                <h2>Pousada Le Ange</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://www.evento.pousadaleange.com.br', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 4 -->
+                            <img src="assets/images/coffee_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_coffee.png" alt="logo">
+                                <h2>Cafeteria Coffee</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/coffe/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="web__slider__buttons">
+                            <button class="web__slider__btn web__slider__btn--prev">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                            <button class="web__slider__btn web__slider__btn--next">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="web__content" id="institucional">
+                    <div class="web__slider">
+                        <div class="web__slider__container">
+                        <div class="web__card"> <!-- Card 1 -->
+                            <img src="assets/images/novametalica_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_novametalica.png" alt="logo">
+                                <h2>Nova Metálica</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://www.novametalica.com.br', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 2 -->
+                            <img src="assets/images/etech_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_etech.png" alt="logo">
+                                <h2>Etech Study Center</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/etech/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="web__slider__buttons">
+                            <button class="web__slider__btn web__slider__btn--prev">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                            <button class="web__slider__btn web__slider__btn--next">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="web__content" id="ecommerce">
+                    <div class="web__slider">
+                    <div class="web__slider__container">
+                    <div class="web__card"> <!-- Card 1 -->
+                        <img src="assets/images/mealmonkey_site.png">
+                        <div class="web__card__texts">
+                            <img src="assets/images/logo_mealmonkey.png" alt="logo">
+                            <h2>Meal Monkey Pizzaria</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                            <button onclick="window.open('https://alephsramos.github.io/mealmonkey/', '_blank');">
+                                <i class="fa-solid fa-link"></i>
+                                Acessar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="web__card"> <!-- Card 2 -->
+                        <img src="assets/images/allox_site.png">
+                        <div class="web__card__texts">
+                            <img src="assets/images/logo_allox.svg" alt="logo">
+                            <h2>Al Lox LTDA</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                            <button onclick="window.open('https://alephsramos.github.io/allox/', '_blank');">
+                                <i class="fa-solid fa-link"></i>
+                                Acessar
+                              </button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="web__slider__buttons">
+                        <button class="web__slider__btn web__slider__btn--prev">
+                            <i class="fa-solid fa-angles-left"></i>
+                        </button>
+                        <button class="web__slider__btn web__slider__btn--next">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </button>
+                    </div>
+                </div></div>
+
+                <div class="web__content" id="criativos">
+                    
+                    <div class="web__slider">
+                        <div class="web__slider__container">
+                        <div class="web__card"> <!-- Card 1 -->
+                            <img src="assets/images/lifegreen_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_lifegreen.svg" alt="logo">
+                                <h2>LifeGreen</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/lifegreen/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 2 -->
+                            <img src="assets/images/thelast_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_thelast.png" alt="logo">
+                                <h2>The Last of Us 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/thelastofus/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="web__card"> <!-- Card 3 -->
+                            <img src="assets/images/horizon_site.png">
+                            <div class="web__card__texts">
+                                <img src="assets/images/logo_horizon.png" alt="logo">
+                                <h2>Horizon Forbidden West</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rem esse labore temporibus, voluptatibus fuga quaerat provident. Quos nemo ratione asperiores consequatur tempora accusamus quasi dolore minus voluptas. Adipisci, inventore.</p>
+                                <button onclick="window.open('https://alephsramos.github.io/horizon/', '_blank');">
+                                    <i class="fa-solid fa-link"></i>
+                                    Acessar
+                                  </button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="web__slider__buttons">
+                            <button class="web__slider__btn web__slider__btn--prev">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                            <button class="web__slider__btn web__slider__btn--next">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </header>
+        </div>
+    </main> 
+
+    <script src="src/components/Sites/main.js"></script>
+
+</section>
+
+<section class="work" id="work">
+    <header class="work__titles">
+        <button class="animate animate-left">
+            <i class="fa-solid fa-comments"></i>
+            <hr>
+            Entrar em contato
+        </button>
+        <h1 class="animate animate-right">Tipos de <b>Serviços</b></h1>
+    </header>
+    <main class="work__cards animate animate-fade-in">
+        <div class="work__card">
+            <h1>Landing Page</h1>
+            <i class="fa-solid fa-laptop-code"></i>
+            <ul>
+                <p>Você terá:</p>
+                <ol>
+                    <li><b>100%</b> feito do seu jeito</li>
+                    <li>Site de alta conversão</li>
+                    <li>Dinamismo impecável</li>
+                    <li>Site <b>leve e rápido</b></li>
+                    <li>Transição dinâmicas</li>
+                    <li>Totalmente <b>responsivo</b></li>
+                    <li>Entrega de <b>3 - 7 dias</b></li>
+                    <li>Acesso total ao código ou CMS</li>
+                    <li>Manutenção <b>grátis</b> de 2 meses</li>
+                </ol>
+            </ul>
+            <p>A partir de:</p>
+            <h2 data-target="359">R$0,00</h2> <!-- Valor inicial R$0,00 -->
+            <button>
+                <i class="fa-solid fa-star"></i>
+            <hr>
+                Fazer minha página
+            </button>
+        </div>
+        
+        <div class="work__card">
+            <h1>Institucional</h1>
+            <i class="fa-solid fa-building-circle-check"></i>
+            <ul>
+                <p>Você terá:</p>
+                <ol>
+                    <li>Apareça para o público</li>
+                    <li>Transição de <b>várias páginas</b></li>
+                    <li>Engaje sua empresa</li>
+                    <li>Dinamismo <b>impecável</b></li>
+                    <li>Site leve e rápido</li>
+                    <li>Totalmente responsivo</li>
+                    <li>Entrega de <b>7 - 14 dias</b></li>
+                    <li>Acesso total ao código ou CMS</li>
+                    <li>Manutenção <b>grátis</b> de 3 meses</li>
+                </ol>
+            </ul>
+            <p>A partir de:</p>
+            <h2 data-target="619">R$0,00</h2>
+            <button>
+                <i class="fa-solid fa-star"></i>
+            <hr>
+                Fazer meu site
+            </button>
+        </div>
+        
+        <div class="work__card">
+            <h1>E-Commerce</h1>
+            <i class="fa-solid fa-basket-shopping"></i>
+            <ul>
+                <p>Você terá:</p>
+                <ol>
+                    <li><b>Vendas online</b> no site</li>
+                    <li>Site de alta conversão</li>
+                    <li>Dinamismo impecável</li>
+                    <li>Site leve e rápido</li>
+                    <li>Transição de <b>várias páginas</b></li>
+                    <li>Responsivo nos dispositivos</li>
+                    <li>Entrega de <b>20 - 45 dias</b></li>
+                    <li>Acesso total ao CMS</li>
+                    <li>Manutenção <b>grátis</b> de 3 meses</li>
+                </ol>
+            </ul>
+            <p>A partir de:</p>
+            <h2 data-target="2809">R$0,00</h2>
+            <button>
+                <i class="fa-solid fa-star"></i>
+            <hr>
+                Fazer minha loja
+            </button>
+        </div>
+        
+        <div class="work__card">
+            <h1>Site pessoal</h1>
+            <i class="fa-solid fa-square-pen"></i>
+            <ul>
+                <p>Você terá:</p>
+                <ol>
+                    <li>100% feito do seu jeito</li>
+                    <li>Esteja na internet</li>
+                    <li><b>Totalmente customizavel</b></li>
+                    <li>Site leve e rápido</li>
+                    <li>Transição <b>de páginas</b></li>
+                    <li>Responsivo nos dispositivos</li>
+                    <li>Entrega de <b>3 - 14 dias</b></li>
+                    <li>Acesso total ao código ou CMS</li>
+                    <li>Manutenção <b>grátis</b> de 1 mês</li>
+                </ol>
+            </ul>
+            <p>A partir de:</p>
+            <h2 data-target="187">R$0,00</h2>
+            <button>
+                <i class="fa-regular fa-star"></i>
+            <hr>
+                Criar meu site
+            </button>
+        </div>
+    </main>
+</section>
+
+<script src="src/script/main.js"></script>
+<script src="src/script/scroll.js"></script>
+
+</body>
+</html>

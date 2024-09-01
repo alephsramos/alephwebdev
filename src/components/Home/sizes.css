@@ -1,0 +1,46 @@
+.home__texts h1{
+    font-size: 3.5rem;
+}
+
+.home__texts p{
+    font-size: 1.2rem;
+}
+
+.home__container section i{
+    font-size: 1.4rem;
+    width: 20%;
+}
+
+.home__container section p{
+    font-size: 0.8rem;
+    width: 40%;
+}
+
+.home__container section span{
+    font-size: 1rem;
+}
+
+.home__texts button{
+    font-size: 1rem;
+}
+
+.home__texts button hr{
+    height: 80%;
+}
+
+.home__down{
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.home__right div i{
+    font-size: 1.2rem;
+}
+
+.home__right div span{
+    font-size: 0.8rem;
+}
+
+.home__right nav i{
+    font-size: 1.8rem;
+}

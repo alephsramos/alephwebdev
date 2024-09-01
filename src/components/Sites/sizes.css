@@ -1,0 +1,46 @@
+.web__title h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.web__title p{
+    font-size: 1.2rem;
+}
+
+.web__card__texts h2{
+    font-size: 1.4rem;
+}
+
+.web__card__texts p{
+    font-size: 0.9rem;
+}
+
+.sites__down{
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.web__nav button{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.web__nav button i{
+    font-size: 1.2rem;
+}
+
+.web__cta i{
+    font-size: 1.4rem;
+}
+
+.web__cta{
+    font-size: 1rem;
+}
+
+.web__card__texts button{
+    font-size: 0.9rem;
+}
+
+.web__card__texts button i{
+    font-size: 1rem;
+}
