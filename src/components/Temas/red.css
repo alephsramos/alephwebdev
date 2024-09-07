@@ -21,6 +21,10 @@ i {
     transition: color .2s ease;
 }
 
+.direitos{
+    color: #ffeb3b;
+}
+
 html{
     background-image: url('../../../assets/images/fundo_black.png');
     background-size: contain;

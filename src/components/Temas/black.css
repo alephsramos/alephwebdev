@@ -30,6 +30,10 @@ html{
     transition: background-color 1s ease, color 0.5s ease;
 }
 
+.direitos{
+    color: #fff;
+}
+
 .home__image img {
     content: url('../../../assets/images/pc_black.png'); /* Altere para a imagem que você quer no tema black */
     transition: content 0.5s ease;
