@@ -67,7 +67,7 @@
     .web__card{
         width: 100vw!important;
         border: none!important;
-        height: 30%!important;
+        height: 50%!important;
         margin-top: 5%;
         box-sizing: border-box;
         padding: 20px;
@@ -76,7 +76,7 @@
     }
     
     .web__card img{
-        width: 60vw!important;
+        width: 70vw!important;
         height: 35%!important;
         object-fit: cover!important;
     }
