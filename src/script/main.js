@@ -119,6 +119,8 @@ const numBubbles = 50; // Número de bolinhas (aumentado para mais cobertura)
         window.addEventListener('scroll', moveBubbles);
 
 
+        
+
 document.getElementById('openModalButton').addEventListener('click', function() {
     document.getElementById('openModal').classList.add('active');
     document.getElementById('overlay').classList.add('active');

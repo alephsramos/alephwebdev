@@ -72,7 +72,10 @@ html, body{
 }
 
 @media (max-width: 568px){
-    *, html, body{
-        cursor: none!important;
+    @media (max-width: 568px) {
+        .cursor,
+        .trail {
+            display: none !important;
+        }
     }
 }
