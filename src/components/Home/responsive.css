@@ -103,7 +103,7 @@
     .home__right img{
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
+        object-fit: contain!important;
     }
     
     .home__right div i{
