@@ -48,7 +48,6 @@
 
     .work__card:nth-child(2){
         transform: translateY(-0px)!important;
-        border-style: dashed!important;
     }
 
     .work__card:nth-child(3){
