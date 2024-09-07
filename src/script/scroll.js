@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       index++;
       setTimeout(typeWriter, 50); // Velocidade de digitação
     } else {
-      setTimeout(hidePreloader, 600); // Tempo para esconder o preloader
+      setTimeout(hidePreloader, 500); // Tempo para esconder o preloader
     }
   }
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateElements.forEach(element => {
       observer.observe(element);
     });
-  }, 1500); // Ajuste o tempo aqui para corresponder ao término do preloader
+  }, 1900); // Ajuste o tempo aqui para corresponder ao término do preloader
 });
 
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
@@ -74,43 +75,54 @@
             <link id="theme-link" rel="stylesheet" href="src/components/Temas/black.css">
 
             <script>
-            
-            document.addEventListener("DOMContentLoaded", function () {
-    const themeLink = document.getElementById("theme-link");
-    const icon = document.getElementById("icon");
 
-    document.getElementById("theme").addEventListener("click", function () {
-        console.log("Button clicked!"); // Verifique se o evento de clique está funcionando
+document.addEventListener("DOMContentLoaded", function () {
+            const themeLink = document.getElementById("theme-link");
+            const icon = document.getElementById("icon");
 
-        // Verifica o tema atual
-        const currentTheme = themeLink.getAttribute("href");
-        if (currentTheme === "src/components/Temas/black.css") {
-            // Muda para o tema verde
-            themeLink.setAttribute("href", "src/components/Temas/green.css");
-            console.log("Switched to green.css");
+            document.getElementById("theme").addEventListener("click", function () {
+                console.log("Button clicked!"); // Verifique se o evento de clique está funcionando
 
-            // Muda o ícone para 'sol'
-            icon.classList.remove("fa-moon");
-            icon.classList.add("fa-sun");
-        } else if (currentTheme === "src/components/Temas/green.css") {
-            // Muda para o tema vermelho
-            themeLink.setAttribute("href", "src/components/Temas/red.css");
-            console.log("Switched to red.css");
+                // Verifica o tema atual
+                const currentTheme = themeLink.getAttribute("href");
+                const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 
-            // Muda o ícone para 'fogo'
-            icon.classList.remove("fa-sun");
-            icon.classList.add("fa-fire");
-        } else {
-            // Muda para o tema preto
-            themeLink.setAttribute("href", "src/components/Temas/black.css");
-            console.log("Switched to black.css");
+                if (currentTheme === "src/components/Temas/black.css") {
+                    // Muda para o tema verde
+                    themeLink.setAttribute("href", "src/components/Temas/green.css");
+                    console.log("Switched to green.css");
 
-            // Muda o ícone para 'lua'
-            icon.classList.remove("fa-fire");
-            icon.classList.add("fa-moon");
-        }
-    });
-});
+                    // Muda o ícone para 'sol'
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+
+                    // Muda a cor da barra superior para verde
+                    themeColorMeta.setAttribute("content", "#00FF00");
+                } else if (currentTheme === "src/components/Temas/green.css") {
+                    // Muda para o tema vermelho
+                    themeLink.setAttribute("href", "src/components/Temas/red.css");
+                    console.log("Switched to red.css");
+
+                    // Muda o ícone para 'fogo'
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-fire");
+
+                    // Muda a cor da barra superior para vermelho
+                    themeColorMeta.setAttribute("content", "#FF0000");
+                } else {
+                    // Muda para o tema preto
+                    themeLink.setAttribute("href", "src/components/Temas/black.css");
+                    console.log("Switched to black.css");
+
+                    // Muda o ícone para 'lua'
+                    icon.classList.remove("fa-fire");
+                    icon.classList.add("fa-moon");
+
+                    // Muda a cor da barra superior para preto
+                    themeColorMeta.setAttribute("content", "#000000");
+                }
+            });
+        });
 
             </script>
 
