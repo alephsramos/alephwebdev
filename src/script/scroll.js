@@ -1,6 +1,37 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const typingText = document.getElementById('typing-text');
+  const siteContent = document.getElementById('site-content');
+  const preloader = document.getElementById('preloader');
+  const text = "oi, bem vindo (a)!";
+  let index = 0;
+
+  // Função para simular a digitação do texto
+  function typeWriter() {
+    if (index < text.length) {
+      typingText.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 50); // Velocidade de digitação
+    } else {
+      setTimeout(hidePreloader, 600); // Tempo para esconder o preloader
+    }
+  }
+
+  // Função para esconder o preloader e mostrar o site
+  function hidePreloader() {
+    preloader.style.display = 'none';
+    siteContent.style.display = 'block';
+    siteContent.classList.add('animate-in');
+  }
+
+  // Iniciar a animação de digitação
+  typeWriter();
+});
+
 document.addEventListener('DOMContentLoaded', function() {
-    const animateElements = document.querySelectorAll('.animate');
-  
+  const animateElements = document.querySelectorAll('.animate');
+
+  // Adicionar um atraso para inicializar as animações após o preloader desaparecer
+  setTimeout(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -9,12 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
           entry.target.classList.remove('in-view');
         }
       });
-    }, { threshold: 0.1 }); // Ajuste o valor do threshold conforme necessário
-  
+    }, { threshold: 0.05 });
+
     animateElements.forEach(element => {
       observer.observe(element);
     });
-  });
+  }, 1500); // Ajuste o tempo aqui para corresponder ao término do preloader
+});
 
 
   function scrollToWork(){
