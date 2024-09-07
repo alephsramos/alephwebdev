@@ -70,3 +70,9 @@ html, body{
         transform: translateY(0);
     }
 }
+
+@media (max-width: 568px){
+    *, html, body{
+        cursor: none!important;
+    }
+}
