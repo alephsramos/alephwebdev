@@ -16,6 +16,10 @@
     transition: background-color 1s ease, color 0.5s ease;
 }
 
+html{
+    background-color: #fbfbfb;
+}
+
 .home__image img {
     content: url('../../../assets/images/pc_green.png'); /* Imagem padrão para o tema green */
     transition: content 0.5s ease;
