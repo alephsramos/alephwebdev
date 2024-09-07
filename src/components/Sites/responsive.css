@@ -29,6 +29,7 @@
         gap: 10px!important;
         justify-content: center!important;
         height: 10%!important;
+        border: 1px solid red;
     }
 
     .web__nav button{
@@ -107,9 +108,38 @@
         height: 100%;
     }
 
-    .web__slider__buttons{
-        display: none!important;
+    .web__slider__buttons {
+        position: relative !important;
+        bottom: 40vh !important; 
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+        justify-content: space-between !important;
     }
+    
+    .web__slider__btn {
+        padding: 10px !important;
+        position: absolute;
+        cursor: pointer !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.2s !important;
+    }
+    
+    .web__slider__btn--prev {
+        position: absolute !important;
+        left: 10px !important;
+    }
+    
+    .web__slider__btn--next{
+        position: absolute !important;
+        right: 10px !important;
+        top: -50%;
+    }
+    
 
 
     .web__title h1{
