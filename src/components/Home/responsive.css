@@ -3,7 +3,7 @@
     .home{
         flex-direction: column !important;
         margin-top: 5% !important;
-        padding: 0 5% !important;
+        padding: 5% 5% !important;  
     }
 
     .home__left{
@@ -53,15 +53,16 @@
     .home__container section i{
         font-size: 0.6rem !important;
         width: 15% !important;
+        display: none;
     }
     
     .home__container section p{
-        font-size: 0.4rem !important;
-        width: 40% !important;
+        font-size: 0.6rem !important;
+        width: 60% !important;
     }
     
     .home__container section span{
-        font-size: 0.6rem !important;
+        font-size: 0.7rem !important;
     }
     
     .home__texts button{
