@@ -73,7 +73,7 @@ document.addEventListener('mousemove', (e) => {
 });
 
 
-const numBubbles = 50; // Número de bolinhas (aumentado para mais cobertura)
+const numBubbles = 100; // Número de bolinhas (aumentado para mais cobertura)
         const bubbles = [];
 
         // Função para gerar bolinhas
