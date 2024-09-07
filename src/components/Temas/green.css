@@ -16,6 +16,12 @@
     transition: background-color 1s ease, color 0.5s ease;
 }
 
+body::after {
+    background: linear-gradient(to top, #fff, transparent);
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Efeito de surgimento suave */
+  }
+
 html{
     background-color: #fbfbfb;
 }
