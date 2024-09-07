@@ -8,6 +8,7 @@
 
     .home__left{
         width: 100% !important;
+        gap: 30px!important;
     }
 
     .home__profile{
