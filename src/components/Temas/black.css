@@ -20,6 +20,10 @@ i{
     transition: color .2s ease;
 }
 
+html{
+    background-color: #000;
+}
+
 
 .home__background{
     background-color: #000;

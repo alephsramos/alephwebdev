@@ -3,7 +3,8 @@
     .home{
         flex-direction: column !important;
         margin-top: 5% !important;
-        padding: 5% 5% !important;  
+        padding: 5% 5% !important;
+        gap: 10px!important;  
     }
 
     .home__left{
@@ -100,7 +101,7 @@
     }
 
     .home__right img{
-        width: 80% !important;
+        width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
     }

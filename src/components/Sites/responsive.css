@@ -1,0 +1,23 @@
+@media (max-width: 568px){
+    .web{
+        height: 100vh;
+        max-width: 100%;
+        border: 1px solid red;
+        padding: 0 5%!important;
+    }
+
+    .web__container{
+        width: 100%;
+        height: 100%!important;
+        border: 1px solid red;
+    }
+
+    .web__container .web__cta{
+        position: relative!important;
+        right: 0;
+        top: 0;
+        width: 60%!important;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+}
