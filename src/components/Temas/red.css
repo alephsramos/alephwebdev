@@ -21,6 +21,11 @@ i {
     transition: color .2s ease;
 }
 
+html{
+    background-image: url('../../../assets/images/fundo_black.png');
+    background-size: contain;
+}
+
 .home__background {
     background-image: url('../../../assets/images/fundo_black.png');
     background-size: contain;
