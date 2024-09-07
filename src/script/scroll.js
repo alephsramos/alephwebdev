@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const typingText = document.getElementById('typing-text');
   const siteContent = document.getElementById('site-content');
   const preloader = document.getElementById('preloader');
-  const text = "oi, bem vindo (a)!";
+  const text = "seja bem vindo (a)!";
   let index = 0;
 
   // Função para simular a digitação do texto
