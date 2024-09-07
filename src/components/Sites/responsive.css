@@ -49,7 +49,7 @@
     .web__title{
         height: 50%!important;
         width: 100%!important;
-        gap: 10px!important;
+        gap: 20px!important;
         display: flex!important;
         align-items: center!important;
         flex-direction: column!important;
@@ -57,7 +57,7 @@
     }
 
     .web__cards{
-        min-width: 100%!important;
+        width: 100%!important;
         height: 50%!important;
         display: flex!important;
         align-items: center!important;
@@ -65,7 +65,7 @@
     }
 
     .web__card{
-        max-width: 100%!important;
+        width: 100vw!important;
         border: none!important;
         height: 30%!important;
         margin-top: 5%;
@@ -76,7 +76,7 @@
     }
     
     .web__card img{
-        width: 40%!important;
+        width: 60vw!important;
         height: 35%!important;
         object-fit: cover!important;
     }
@@ -96,17 +96,15 @@
     .web__slider {
         position: relative;
         overflow: hidden;
-        min-width: 100%!important;
-        border: 1px solid red;
-        height: 100%;
+        width: 100vw!important;
+        height: 50%!important;
     }
 
     .web__slider__container {
         display: flex;
         transition: transform 0.5s ease;
-        min-width: 100%!important;
+        width: 100%!important;
         height: 100%;
-        border: 1px solid green;
     }
 
     .web__slider__buttons{
@@ -127,11 +125,12 @@
     
     .web__card__texts h2{
         font-size: 0.8rem!important;
+        width: 90vw!important;
     }
     
     .web__card__texts p{
         font-size: 0.6rem!important;
-        width: 95%;
+        width: 60vw!important;
         text-align: justify!important;
     }
     
