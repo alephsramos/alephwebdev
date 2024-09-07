@@ -74,6 +74,18 @@
 
     .home__texts button:hover{
         transform: translateX(0px) !important;
+        background-color: #fff!important;
+        color: #000!important;
+    }
+
+    .home__texts button:hover i{
+        color: #000!important;
+    }
+
+    .home__texts button:hover hr{
+        color: #000!important;
+        background-color: #000!important;
+        border-color: #000!important;
     }
     
     .home__texts button hr{
