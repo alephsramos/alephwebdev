@@ -83,7 +83,7 @@
 
     .web__card__texts{
         max-width: 90%!important;
-        height: 15%!important;
+        height: 10%!important;
         gap: 10px!important;
         margin: 0 auto;
         text-align: center;
@@ -113,13 +113,13 @@
 
 
     .web__title h1{
-        font-size: 2.2rem!important;
+        font-size: 2rem!important;
         text-align: center;
         font-weight: 800;
     }
     
     .web__title p{
-        font-size: 0.9rem!important;
+        font-size: 0.8rem!important;
         text-align: justify;
     }
     
