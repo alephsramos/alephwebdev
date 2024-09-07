@@ -24,15 +24,12 @@
     <link rel="stylesheet" href="src/components/Work/index.css">
     <link rel="stylesheet" href="src/components/Work/sizes.css">
 
+
     <title>Aleph Ramos | Desenvolvedor Web</title>
 
 </head>
 <body>
-   
-    <!-- 
-    Ideia:
-    Colocar os icons relacionados a cada um e colocar o texto para cada, os links serão de acordo com cada parte do site, e irá atualizar a cor do icon/texto conforme eu rolo para baixo e passo para a seção especifica. 
-    -->
+
 <div class="cursor" id="cursor"></div>
 <div class="home__background"></div>
 
@@ -61,6 +58,53 @@
                 <li><i class="fa-brands fa-whatsapp"></i></li>
                 <li>Falar</li></a>
             </ul>
+            <ul id="theme">
+                <li><i id="icon" class="fa-solid fa-moon"></i></li>
+            </ul>
+
+            <link id="theme-link" rel="stylesheet" href="src/components/Temas/black.css">
+
+            <script>
+            
+            document.addEventListener("DOMContentLoaded", function () {
+    const themeLink = document.getElementById("theme-link");
+    const icon = document.getElementById("icon");
+
+    document.getElementById("theme").addEventListener("click", function () {
+        console.log("Button clicked!"); // Verifique se o evento de clique está funcionando
+
+        // Verifica o tema atual
+        const currentTheme = themeLink.getAttribute("href");
+        if (currentTheme === "src/components/Temas/black.css") {
+            // Muda para o tema verde
+            themeLink.setAttribute("href", "src/components/Temas/green.css");
+            console.log("Switched to green.css");
+
+            // Muda o ícone para 'sol'
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        } else if (currentTheme === "src/components/Temas/green.css") {
+            // Muda para o tema vermelho
+            themeLink.setAttribute("href", "src/components/Temas/red.css");
+            console.log("Switched to red.css");
+
+            // Muda o ícone para 'fogo'
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-fire");
+        } else {
+            // Muda para o tema preto
+            themeLink.setAttribute("href", "src/components/Temas/black.css");
+            console.log("Switched to black.css");
+
+            // Muda o ícone para 'lua'
+            icon.classList.remove("fa-fire");
+            icon.classList.add("fa-moon");
+        }
+    });
+});
+
+            </script>
+
         </div>
     <hr class="nav__line">
         <span>by aleph &copy 2024</span>
@@ -85,7 +129,7 @@
         </header>
         <main class="home__texts">
             <h1 class="animate animate-left"><b>Desenvolva um site</b> e veja seu negócio crescer</h1>
-            <p class=" animate animate-up">Eu, Aleph Ramos, vou criar o site que vai <b>destacar</b> sua marca e <b style="background-color: transparent;">aumentar a sua visibilidade.</b> Mas antes, conheça um pouco sobre todo o meu trabalho.</p>
+            <p class=" animate animate-up">Eu, Aleph Ramos, vou criar o site que vai <b>destacar</b> sua marca e <b>aumentar a sua visibilidade.</b> Mas antes, conheça um pouco sobre todo o meu trabalho.</p>
             <div class="home__container">
                 <section class="animate animate-zoom-in">
                     <i class="fa-solid fa-user-check"></i>
@@ -379,8 +423,8 @@
                     <li>Manutenção <b>grátis</b> de 2 meses</li>
                 </ol>
             </ul>
-            <p>A partir de:</p>
-            <h2 data-target="359">R$0,00</h2> <!-- Valor inicial R$0,00 -->
+            <p>Valores a</p>
+            <h2>Combinar</h2> <!-- Valor inicial R$0,00 -->
             <button>
                 <i class="fa-solid fa-star"></i>
             <hr>
@@ -405,8 +449,8 @@
                     <li>Manutenção <b>grátis</b> de 3 meses</li>
                 </ol>
             </ul>
-            <p>A partir de:</p>
-            <h2 data-target="619">R$0,00</h2>
+            <p>Valores a</p>
+            <h2>Combinar</h2>
             <button>
                 <i class="fa-solid fa-star"></i>
             <hr>
@@ -431,8 +475,8 @@
                     <li>Manutenção <b>grátis</b> de 3 meses</li>
                 </ol>
             </ul>
-            <p>A partir de:</p>
-            <h2 data-target="2809">R$0,00</h2>
+            <p>Valores a</p>
+            <h2>Combinar</h2>
             <button>
                 <i class="fa-solid fa-star"></i>
             <hr>
@@ -457,9 +501,9 @@
                     <li>Manutenção <b>grátis</b> de 1 mês</li>
                 </ol>
             </ul>
-            <p>A partir de:</p>
-            <h2 data-target="187">R$0,00</h2>
-            <button>
+            <p>Valores a</p>
+            <h2>Combinar</h2>
+            <button id="openModalButton">
                 <i class="fa-regular fa-star"></i>
             <hr>
                 Criar meu site
@@ -467,6 +511,36 @@
         </div>
     </main>
 </section>
+
+<!-- <div class="modal" id="openModal">
+    <h1>Estamos quase lá!</h1>
+    <p>Apenas preencha algumas informações para que possamos entender melhor sobre seus objetivos.</p>
+    <form id="infoForm">    
+        <input type="text" id="name" placeholder="Digite seu nome e/ou nome da empresa" required>
+        <input type="tel" id="tel" placeholder="Digite seu WhatsApp" required>
+        <select id="siteType" required>
+            <option disabled selected>Qual site você quer fazer?</option>
+            <option value="landingpage">Landing Page</option>
+            <option value="institucional">Institucional</option>
+            <option value="ecommerce">E-commerce</option>
+            <option value="pessoal">Pessoal</option>
+            <option value="outro">Outro</option>
+        </select>
+        <input type="text" id="features" placeholder="Digite funcionalidades específicas">
+        <select id="budget">
+            <option disabled selected>Qual seu orçamento estimado?</option>
+            <option value="baixo">R$500 até R$1,000</option>
+            <option value="media">R$1,000 até R$5,000</option>
+            <option value="alto">R$5,000 até R$15,000</option>
+            <option value="enorme">Mais de R$15,000+ </option>
+            <option value="none">Prefiro não dizer</option>
+        </select>
+        <button type="submit" id="submit">Enviar informações</button>
+    </form>
+</div>
+
+<div class="overlay" id="overlay"></div> -->
+
 
 <script src="src/script/main.js"></script>
 <script src="src/script/scroll.js"></script>

@@ -23,11 +23,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
     width: 20%;
     transition: all .1s ease-in-out;
     border: 1px solid;
-    box-shadow: 4px 4px 0px #000;
     cursor: none;
 }
 
@@ -40,20 +38,11 @@
     font-weight: 900;
 }
 
-.nav__links ul.active {
-    background-color: #000; /* Exemplo de cor de fundo para o hover */
-    /* Outros estilos que você deseja para o hover */
-}
-
 .nav__links ul:hover{
-    background-color: #BDF772;
-    border: 2px solid #000;
     transform: scale(1.05);
-    box-shadow: 3px 3px 0px rgb(0, 0, 0);
 }
 
 .nav__links ul:hover i{
-    color: #000;
     animation: iconNav 0.4s infinite linear alternate-reverse;
 }
 
@@ -72,19 +61,13 @@
     font-style: italic;
 }
 
-.nav__links i{
-    color: #000;
-}
-
 .nav__links a{
-    color: #000;
     font-family: monospace;
 }
 
 .nav__line{
     width: 15%;
     height: 1px;
-    background-color: #000;
     border: none;
 }
 
@@ -92,6 +75,5 @@
     width: 12%;
     text-align: center;
     font-style: italic;
-    color: #000;
     font-weight: 900;
 }

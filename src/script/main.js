@@ -48,39 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const priceCounters = document.querySelectorAll(".work__card h2");
-
-    const options = {
-        threshold: 0.5
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = +counter.getAttribute('data-target');
-                const increment = target / 50;
-                let currentValue = 0;
-
-                const updateCounter = setInterval(() => {
-                    currentValue += increment;
-                    if (currentValue >= target) {
-                        currentValue = target;
-                        clearInterval(updateCounter);
-                    }
-                    counter.textContent = `R$${Math.round(currentValue).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
-                }, 50);
-            } else {
-                entry.target.textContent = "R$0,00"; // Reseta para R$0,00 quando não estiver visível
-            }
-        });
-    }, options);
-
-    priceCounters.forEach(counter => {
-        observer.observe(counter);
-    });
-});
 
 const cursor = document.getElementById('cursor');
 
@@ -150,3 +117,23 @@ const numBubbles = 50; // Número de bolinhas (aumentado para mais cobertura)
 
         // Adicionar listener para o scroll
         window.addEventListener('scroll', moveBubbles);
+
+
+document.getElementById('openModalButton').addEventListener('click', function() {
+    document.getElementById('openModal').classList.add('active');
+    document.getElementById('overlay').classList.add('active');
+});
+
+document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('openModal').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+});
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+
+

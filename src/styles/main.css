@@ -1,5 +1,4 @@
 .home__background{
-    background-image: url('../../assets/images/background.png');
     background-size: contain;
     width: 100%;
     height: 100vh;
@@ -16,14 +15,14 @@ body{
 }
 
 html, body{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     position: relative;
+    max-width: 100%;
 }
 
 .cursor {
     width: 18px;
     height: 18px;
-    background-color: #000;
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -39,7 +38,6 @@ html, body{
 .trail {
     width: 10px;
     height: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -56,7 +54,6 @@ html, body{
 
 .bubble {
     position: absolute;
-    background-color: #BDF77240;
     pointer-events: none;
     z-index: 10000;
     animation: float 15s infinite;

@@ -1,0 +1,280 @@
+
+.bubble {
+    background-color: #BDF77240;
+}
+
+.cursor {
+    background-color: #000;
+}
+
+.trail {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home__background{
+    background-image: url('../../../assets/images/background.png');
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+.home__image img {
+    content: url('../../../assets/images/pc_green.png'); /* Imagem padrão para o tema green */
+    transition: content 0.5s ease;
+}
+
+i{
+    transition: color 0.5s ease;
+}
+
+.nav__links ul{
+    background-color: #fff;
+    box-shadow: 4px 4px 0px #000;
+}
+
+.nav__links ul.active {
+    background-color: #000; 
+}
+
+.nav__links ul:hover{
+    background-color: #BDF772;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px rgb(0, 0, 0);
+}
+
+.nav__links ul:hover i{
+    color: #000;
+}
+
+.nav__links i{
+    color: #000;
+}
+
+.nav__links a{
+    color: #000;
+    font-family: monospace;
+}
+
+.nav__line{
+    background-color: #000;
+}
+
+.nav span{
+    color: #000;
+}
+
+.home__profile{
+    background-color: #000;
+    color: #fff;
+}
+
+.home__texts b {
+    background-color: #BDF772;
+    color: #000;
+}
+
+.home__texts button{
+    background-color: #BDF772;
+    color: #000;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.home__texts button:hover{
+    background-color: #fff;
+    border-color: #000;
+}
+
+.home__texts button hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+.home__container section{
+    border: 1px solid #000;
+    box-shadow: 2px 2px 0 #000;
+}
+
+.home__container section hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+
+.home__container section span{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.home__right nav{
+    background-color: #fbfbfb;
+    border: 1px solid;
+    box-shadow: 5px 5px #000;
+}
+
+.home__right nav a{
+    color: #000;
+}
+
+.home__right nav a:hover{
+    color: #BDF772;
+}
+
+.home__right div span{
+    background-color: #BDF772;
+}
+
+.web{
+    background-image: url('../../../assets/images/background.png');
+    border-top: 1px dashed;
+}
+
+.web__cta{
+    background-color: #BDF772;
+    color: #000;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.web__cta:hover{
+    background-color: #fff;
+    border-color: #000;
+}
+
+.web__cta hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+.web__nav button{
+    border: 3px solid;
+    background-color: #fbfbfb;
+    box-shadow: 3px 3px #000;
+}
+
+.web__nav button:hover{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.web__btn.active{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.web__title p b{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.web__title h1 b{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.web__card{
+    border: 2px solid #BDF772;
+    background-color: #fbfbfb;
+}
+
+.web__card:hover{
+    border: 2px solid #000;
+}
+
+.web__card__texts button{
+    background-color: #fbfbfb;
+    border: 3px solid #000;
+    color: #000;
+    box-shadow: 3px 3px #000;
+}
+
+.web__card__texts button:hover{
+    background-color: #BDF772;
+}
+
+.web__slider__btn {
+    background-color: #BDF772; 
+    box-shadow: 3px 3px #000;
+    color: #000;
+    border: 3px solid;
+}
+
+.web__slider__btn:hover{
+    background-color: #fff;
+}
+
+.work{
+    border-top: 2px dashed #000;
+    background-image: url('../../../assets/images/background.png');
+}
+
+.work__titles h1 b{
+    background-color: #BDF772;
+    color: #000;
+}
+
+.work__titles button{
+    background-color: #BDF772;
+    color: #000;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.work__titles button hr{
+    background-color: #000;
+    border-color:  #000;
+}
+
+.work__titles button:hover{
+    background-color: #fff;
+    border-color: #000;
+}
+
+.work__card{
+    border: 3px solid;
+    box-shadow: 5px 5px #000;
+}
+
+.work__card:hover{
+    background-color: #fbfbfb;
+}
+
+
+.work__card:nth-child(2):hover{
+    background-color: #fbfbfb;
+}
+
+.work__card:nth-child(4){
+    background-image: url('../../../assets/images/background2.png');
+    color: #000;
+}
+
+.work__card:nth-child(4) button{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    box-shadow: 5px 5px #000;
+}
+
+.work__card:nth-child(4) button:hover{
+    color: #000;
+}
+
+.work__card ol{
+    list-style-image: url('../../../assets/images/list_style.png');
+}
+
+.work__card button{
+    background-color: #BDF772;
+    color: #000;
+    border: 3px solid;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
+}
+
+.work__card button hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+.work__card button:hover{
+    background-color: #fff;
+    border-color: #000;
+}

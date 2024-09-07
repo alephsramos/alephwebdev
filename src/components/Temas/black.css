@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.bubble {
+    background-color: #ffffff40;
+}
+
+.cursor {
+    background-color: #fff;
+}
+
+.trail {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+i{
+    transition: color .2s ease;
+}
+
+
+.home__background{
+    background-color: #000;
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+.home__image img {
+    content: url('../../../assets/images/pc_black.png'); /* Altere para a imagem que você quer no tema black */
+    transition: content 0.5s ease;
+}
+
+.nav__links ul{
+    background-color: #fff;
+}
+
+.nav__links ul.active {
+    background-color: #000;
+    border: 1px solid #fff; 
+    color: #fff;
+}
+
+.nav__links ul:hover{
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.nav__links ul:hover i{
+    color: #fff;
+}
+
+.nav__links ul:hover a{
+    color: #fff;
+}
+
+.nav__links i{
+    color: #000;
+}
+
+.nav__links a{
+    color: #000;
+}
+
+.nav__line{
+    background-color: #fff;
+}
+
+.nav span{
+    color: #fff;
+}
+
+.home__profile{
+    background-color: #fff;
+    color: #000;
+}
+
+.home__texts b{
+    font-weight: 600;
+}
+
+.home__texts h1{
+    color: #fff;
+    font-weight: 400;
+}
+
+.home__texts p{
+    color: #fff;
+    font-weight: 300;
+}
+
+.home__texts i{
+    color: #fff;
+}
+
+.home__texts button{
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+}
+
+.home__texts button:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+}
+
+.home__texts button hr{
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.home__container section{
+    border: 1px solid #fff;
+}
+
+.home__container section hr{
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.home__container section span{
+    color: #fff;
+    font-weight: 400;
+}
+
+.home__right nav{
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.home__right nav a{
+    color: #000;
+}
+
+.home__right nav a:hover{
+    color: #000;
+}
+
+.home__right div span{
+    background-color: #000;
+}
+
+/* section 2 */
+
+.web{
+    background-color: #000;
+    border-top: 1px dashed #fff;
+}
+
+.web__cta{
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #fff;
+}
+
+.web__cta:hover{
+    background-color: #fff;
+}
+
+.web__cta hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+.web__nav button{
+    border: 1px solid;
+    background-color: #fbfbfb;
+    font-weight: 500;
+}
+
+.sites__down{
+    color: #fff;
+}
+
+.web__nav button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.web__btn.active{
+    background-color: #000;
+    color: #fff;
+}
+
+.web__title h1{
+    color: #fff;
+    font-weight: 300;
+}
+
+.web__title p{
+    color: #fff;
+    line-height: 130%;
+}
+
+.web__title p b{
+    color: #fff;
+    font-weight: 600;
+}
+
+.web__title h1 b{
+    color: #fff;
+    font-weight: 600;
+}
+
+.web__card{
+    border: 2px solid #fff;
+}
+
+.web__card__texts button{
+    background-color: #fbfbfb;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.web__slider__btn {
+    background-color: #fff; 
+    color: #000;
+    border: 1px solid;
+}
+
+.web__slider__btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.web__card__texts{
+    color: #fff;
+}
+
+.web__card__texts img{
+    filter: invert(100%);
+}
+
+.work{
+    border-top: 2px dashed #fff;
+    background-color: #000;
+}
+
+.work__titles h1{
+    color: #fff;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+.work__titles h1 b{
+    color: #fff;
+    font-weight: 600;
+}
+
+.work__titles button{
+    color: #000;
+    border: 1px solid;
+}
+
+.work__titles button hr{
+    background-color: #000;
+    border-color:  #000;
+}
+
+.work__titles button:hover{
+    background-color: #fff;
+    border-color: #000;
+}
+
+.work__card{
+    border: 1px solid;
+    color: #fff;
+}
+
+.work__card:nth-child(4){
+    background-color: #fff;
+    color: #000;
+}
+
+.work__card:nth-child(4) button{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.work__card:nth-child(4) button hr{
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.work__card:nth-child(4) ol{
+    list-style-image: url('../../../assets/images/check_black.png');
+}
+
+.work__card:nth-child(4) button:hover{
+    color: #000;
+}
+
+.work__card ol{
+    list-style-image: url('../../../assets/images/check_white.png');
+}
+
+.work__card button{
+    color: #000;
+    border: 1px solid;
+}
+
+.work__card button hr{
+    background-color: #000;
+    border-color: #000;
+}
+
+.work__card button:hover{
+    background-color: #fff;
+    border-color: #000;
+}

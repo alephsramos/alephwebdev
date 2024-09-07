@@ -6,9 +6,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
-    background-image: url('../../../assets/images/background.png');
     background-size: contain;
-    border-top: 1px dashed;
 }
 
 .web__container{
@@ -32,11 +30,7 @@
     width: 35%;
     height: 8%;
     border: none;
-    background-color: #BDF772;
-    color: #000;
     font-weight: 800;
-    border: 3px solid;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 1);
     cursor: none;
     position: relative;
     z-index: 10;
@@ -44,14 +38,10 @@
 }
 
 .web__cta:hover{
-    background-color: #fff;
-    border-color: #000;
     transform: scale(1.05) translateX(5px);
 }
 
 .web__cta hr{
-    background-color: #000;
-    border-color: #000;
     height: 80%;
 }
 
@@ -69,25 +59,12 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    border: 3px solid;
-    background-color: #fbfbfb;
-    box-shadow: 3px 3px #000;
     transition: all .2s;
-}
-
-.web__nav button:hover{
-    background-color: #BDF772;
-    color: #000;
 }
 
 .web__btn{
     cursor: none;
 
-}
-
-.web__btn.active{
-    background-color: #BDF772;
-    color: #000;
 }
 
 .web__container__center{
@@ -119,15 +96,11 @@
 
 .web__title p b{
     display: inline-block;
-    background-color: #BDF772;
-    color: #000;
     font-weight: 800;
 }
 
 .web__title h1 b{
-    background-color: #BDF772;
     display: inline-block;
-    color: #000;
 }
 
 .web__cards{
@@ -163,13 +136,7 @@
     align-items: center;
     justify-content: center;
     gap: 0px;
-    border: 2px solid #BDF772;
-    background-color: #fbfbfb;
     transition: .6s all;
-}
-
-.web__card:hover{
-    border: 2px solid #000;
 }
 
 .web__card img{
@@ -197,15 +164,11 @@
 }
 
 .web__card__texts button{
-    background-color: #fbfbfb;
-    border: 3px solid #000;
     padding: 10px 10px;
-    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    box-shadow: 3px 3px #000;
     font-weight: 800;
     cursor: none;
     z-index: 10;
@@ -213,7 +176,6 @@
 }
 
 .web__card__texts button:hover{
-    background-color: #BDF772;
     transform: scale(1.02);
 }
 
@@ -250,10 +212,6 @@
 }
 
 .web__slider__btn {
-    background-color: #BDF772; 
-    box-shadow: 3px 3px #000;
-    color: #000;
-    border: 3px solid;
     padding: 10px;
     cursor: none;
     display: flex;
@@ -264,7 +222,6 @@
 
 .web__slider__btn:hover{
     transform: scale(1.05);
-    background-color: #fff;
 }
 
 
