@@ -441,7 +441,6 @@
 
     .sites__down{
         z-index: 9999!important;
-        margin-bottom: 10%;
     }
 
     .web__nav{
@@ -496,7 +495,7 @@
     }
     
     .web__card img{
-        width: 70vw!important;
+        width: 50vw!important;
         height: 35%!important;
         object-fit: cover!important;
     }
@@ -573,12 +572,12 @@
     }
     
     .web__card__texts h2{
-        font-size: 1.6rem!important;
+        font-size: 1.2rem!important;
         width: 90vw!important;
     }
     
     .web__card__texts p{
-        font-size: 1rem!important;
+        font-size: 0.8rem!important;
         width: 60vw!important;
         text-align: justify!important;
     }
@@ -592,7 +591,7 @@
     }
     
     .web__nav button{
-        font-size: 1rem!important;
+        font-size: 0.6rem!important;
         font-weight: 800;
     }
     
@@ -622,12 +621,211 @@
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px){
-
-}
-
 @media (min-width: 1281px) and (max-width: 1440px){
+    .web{
+        height: 100vh!important ;
+        max-width: 100%;
+        padding: 0 5%!important;
+        flex-direction: column!important;
+    }
 
+    .web__container{
+        width: 100%;
+        height: 100%!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: space-evenly!important;
+        flex-direction: column-reverse!important;
+    }
+
+    .web__container .web__cta{
+        position: relative!important;
+        width: 60%!important;
+        padding: 15px!important;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .sites__down{
+        z-index: 9999!important;
+    }
+
+    .web__nav{
+        width: 100%!important;
+        gap: 10px!important;
+        justify-content: center!important;
+        height: 25%!important;
+    }
+
+    .web__nav button{
+        width: 22%!important;
+        padding: 10px 30px!important;
+        white-space: nowrap!important;
+        gap: 5px!important;
+    }
+
+
+    .web__container__center{
+        flex-direction: column!important;
+        gap: 5px!important;
+        height: 80%!important;
+        max-width: 100%;
+    }
+
+    .web__title{
+        height: 20%!important;
+        width: 100%!important;
+        gap: 20px!important;
+        display: flex!important;
+        align-items: center!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+    }
+
+    .web__cards{
+        width: 100%!important;
+        height: 50%!important;
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+    .web__card{
+        width: 90vw!important;
+        border: none!important;
+        height: 30%!important;
+        margin-top: 5%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .web__card img{
+        width: 50vw!important;
+        height: 35%!important;
+        object-fit: cover!important;
+    }
+
+    .web__card__texts{
+        max-width: 90%!important;
+        height: 10%!important;
+        gap: 10px!important;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+
+    .web__slider {
+        position: relative;
+        overflow: hidden;
+        width: 100vw!important;
+        height: 50%!important;
+    }
+
+    .web__slider__container {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%!important;
+        height: 100%;
+    }
+
+    .web__slider__buttons {
+        position: relative !important;
+        bottom: 40vh !important; 
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: flex !important;
+        gap: 10px !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+    
+    .web__slider__btn {
+        padding: 20px !important;
+        position: absolute;
+        cursor: pointer !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.2s !important;
+    }
+    
+    .web__slider__btn--prev {
+        position: absolute !important;
+        left: 10px !important;
+    }
+    
+    .web__slider__btn--next{
+        position: absolute !important;
+        right: 10px !important;
+        top: -50%;
+    }
+    
+
+
+    .web__title h1{
+        font-size: 1rem!important;
+        text-align: center;
+        font-weight: 800;
+    }
+    
+    .web__title p{
+        font-size: 1.2rem!important;
+        text-align: justify;
+    }
+    
+    .web__card__texts h2{
+        font-size: 1.2rem!important;
+        width: 90vw!important;
+    }
+    
+    .web__card__texts p{
+        font-size: 0.8rem!important;
+        width: 60vw!important;
+        text-align: justify!important;
+    }
+    
+    .sites__down{
+        font-size: 2rem;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .web__nav button{
+        font-size: 0.6rem!important;
+        font-weight: 800;
+    }
+    
+    .web__nav button i{
+        font-size: 1.2rem;
+        display: none;
+    }
+    
+    .web__cta i{
+        font-size: 1.4rem;
+    }
+    
+    .web__cta{
+        font-size: 1rem;
+    }
+
+    .web__card__texts img{
+        display: none;
+    }
+    
+    .web__card__texts button{
+        font-size: 0.8rem!important;
+    }
+    
+    .web__card__texts button i{
+        font-size: 0.9rem!important;
+    }
 }
 
 @media (min-width: 1441px){
