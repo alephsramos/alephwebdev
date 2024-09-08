@@ -232,7 +232,7 @@ body::after {
     }
 
     .carrossel__slide img {
-        width: 40px!important;
+        width: 50px!important;
     }
     .carrossel__track {
         display: flex;
