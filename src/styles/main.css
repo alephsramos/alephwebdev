@@ -218,6 +218,7 @@ body::after {
     .carrossel__slide img {
         width: 70px!important;
     }
+
 }
 
 @media (max-width: 480px) {
