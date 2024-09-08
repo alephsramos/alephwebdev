@@ -522,9 +522,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 80px;
+        gap: 50px!important;
         max-width: 100%;
-        overflow: hidden;
+        overflow: hidden!important;
+        position: relative!important;
     }
     
     .home__left{
@@ -533,6 +534,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        overflow: hidden!important;
     }
     
     .home__profile{
@@ -548,7 +550,7 @@
     .home__texts{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px!important;
     }
     
     .home__texts b {
@@ -587,6 +589,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 15px;
+        overflow-x: hidden!important;
     }
     
     .home__container section{
@@ -614,6 +617,7 @@
         margin-top: 5%;
         width: 50%;
         position: relative;
+        overflow: hidden!important;
     }
     
     .home__right nav{
@@ -624,11 +628,17 @@
         right: -15%!important;
         top: 15%!important;
         transform: translateY(-50%);
-        padding: 15px;
+        padding: 10px!important;
+        overflow: hidden!important;
+    }
+
+    .home__right nav i{
+        font-size: 1.2rem!important;
     }
     
     .home__right nav a{
         transition: all .2s ease-in-out;
+        font-size: 0.8rem!important;
     }
     
     .home__right div span{
@@ -644,6 +654,7 @@
         align-items: center;
         justify-content: center;
         animation: imageAnime 10s linear infinite alternate-reverse;
+        overflow: hidden!important;
     }
     
     .home__image img{
@@ -651,6 +662,7 @@
         height: 100%;
         position: absolute;
         object-fit: contain;
+        overflow: hidden!important;
     }
 
     .home__container section i{
@@ -695,5 +707,190 @@
 }
 
 @media (min-width: 1441px){
+    .home{
+        height: 100vh;
+        padding: 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px!important;
+        max-width: 100%;
+        overflow-x: hidden!important;
+    }
+    
+    .home__left{
+        width: 50%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-x: hidden!important;
+    }
+    
+    .home__profile{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 80%!important;
+    }
+    
+    
+    .home__texts{
+        display: flex;
+        flex-direction: column;
+        gap: 40px!important;
+    }
+    
+    .home__texts b {
+        display: inline-block;
+        font-weight: 800;
+    }
+    
+    .home__texts h1{
+        line-height: 100%;
+        font-weight: 800;
+        font-size: 3rem!important;
+    }
 
+    .home__texts p{
+        font-size: 1.3rem!important;
+    }
+    
+    .home__texts button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        width: 40%!important;
+        border: none;
+        color: #000;
+        transition: all .3s;
+        font-weight: 800;
+    }
+    
+    .home__texts button:hover{
+        transform: scale(1.05) translateX(5px);
+    }
+    
+    .home__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    
+    .home__container section{
+        display: flex;
+        align-items: center;
+        gap: 10px!important;
+        padding: 10px;
+        border: 1px solid #000;
+        width: 30%;
+        height: 50%;
+        box-shadow: 2px 2px 0 #000;
+    }
+    
+    .home__container section hr{
+        height: 100%;
+    }
+    
+    .home__container section span{
+        font-weight: 900;
+        display: inline-block;
+        }
+    
+    .home__right{
+        height: 90%;
+        margin-top: 5%;
+        width: 50%;
+        position: relative;
+        overflow-x: hidden!important;
+    }
+    
+    .home__right nav{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        right: -15%!important;
+        top: 15%!important;
+        transform: translateY(-50%);
+        padding: 15px!important;
+        overflow: hidden!important;
+    }
+
+    .home__right nav i{
+        font-size: 1.4rem!important;
+    }
+    
+    .home__right nav a{
+        transition: all .2s ease-in-out;
+        font-size: 0.8rem!important;
+    }
+    
+    .home__right div span{
+        font-weight: 800;
+    }
+    
+    .home__image{
+        width: 90%;
+        top: -15%!important;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: imageAnime 10s linear infinite alternate-reverse;
+        overflow: hidden!important;
+    }
+    
+    .home__image img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: contain;
+        overflow: hidden!important;
+    }
+
+    .home__container section i{
+        font-size: 1rem!important;
+        width: 20%;
+    }
+    
+    .home__container section p{
+        font-size: 0.7rem!important;
+        width: 40%;
+    }
+    
+    .home__container section span{
+        font-size: 0.7rem!important;
+    }
+    
+    .home__texts button{
+        font-size: 1rem;
+    }
+    
+    .home__texts button hr{
+        height: 80%;
+    }
+    
+    .home__down{
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+    
+    .home__right div i{
+        font-size: 1.2rem;
+    }
+    
+    .home__right div span{
+        font-size: 0.8rem;
+    }
+    
+    .home__right nav i{
+        font-size: 1.8rem;
+    }
+    
 }

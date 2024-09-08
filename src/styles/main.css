@@ -12,6 +12,7 @@
 
 body{
     cursor: none;
+    overflow: hidden!important;
 }
 
 html, body{
