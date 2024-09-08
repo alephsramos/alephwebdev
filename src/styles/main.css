@@ -223,6 +223,12 @@ body::after {
         margin-top: -10%;
     }
 
+    .carrossel__track {
+        display: flex;
+        width: 500%!important; /* Ajuste conforme o número de slides */
+        animation: slide 5s linear infinite alternate-reverse;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -236,7 +242,7 @@ body::after {
     }
     .carrossel__track {
         display: flex;
-        width: 200%; /* Ajuste conforme o número de slides */
+        width: 500%!important; /* Ajuste conforme o número de slides */
         animation: slide 5s linear infinite alternate-reverse;
     }
 }
