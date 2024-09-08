@@ -184,6 +184,7 @@ body::after {
 @media (min-width: 1200px){
     .carrossel__logos{
         height: 15vh;
+        margin-top: -5%;
     }
 }
 
