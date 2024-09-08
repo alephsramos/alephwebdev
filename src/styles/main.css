@@ -160,7 +160,7 @@ body::after {
 .carrossel__track {
     display: flex;
     width: 200%; /* Ajuste conforme o número de slides */
-    animation: slide 5s linear infinite;
+    animation: slide 10s linear infinite;
 }
 
 .carrossel__slide {
@@ -216,14 +216,28 @@ body::after {
 /* Responsividade */
 @media (max-width: 768px) {
     .carrossel__slide img {
-        width: 70px!important;
+        width: 50px!important;
+    }
+
+    .carrossel__logos{
+        margin-top: -10%;
     }
 
 }
 
 @media (max-width: 480px) {
+
+    .carrossel__logos{
+        margin-top: -10%;
+    }
+
     .carrossel__slide img {
-        width: 50px!important;
+        width: 40px!important;
+    }
+    .carrossel__track {
+        display: flex;
+        width: 200%; /* Ajuste conforme o número de slides */
+        animation: slide 5s linear infinite alternate-reverse;
     }
 }
 
