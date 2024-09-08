@@ -417,6 +417,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </section>
 
+<section class="carrossel__logos">
+    <div class="carrossel__container">
+        <div class="carrossel__track">
+            <div class="carrossel__slide">
+                <img src="assets/images/html.png" alt="html">
+                <img src="assets/images/css.png" alt="css">
+                <img src="assets/images/js.png" alt="js">
+                <img src="assets/images/react.png" alt="react">
+                <img src="assets/images/github.png" alt="github">
+                <img src="assets/images/git.png" alt="git">
+                <img src="assets/images/python.png" alt="python">
+                <img src="assets/images/php.png" alt="php">
+                <img src="assets/images/wordpress.png" alt="wordpress">
+                <img src="assets/images/bootstrap.png" alt="bootstrap">
+                <img src="assets/images/jquery.png" alt="jquery">
+            </div>
+            <div class="carrossel__slide">
+                <img src="assets/images/html.png" alt="html">
+                <img src="assets/images/css.png" alt="css">
+                <img src="assets/images/js.png" alt="js">
+                <img src="assets/images/react.png" alt="react">
+                <img src="assets/images/github.png" alt="github">
+                <img src="assets/images/git.png" alt="git">
+                <img src="assets/images/python.png" alt="python">
+                <img src="assets/images/php.png" alt="php">
+                <img src="assets/images/wordpress.png" alt="wordpress">
+                <img src="assets/images/bootstrap.png" alt="bootstrap">
+                <img src="assets/images/jquery.png" alt="jquery">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    const carrossel = document.querySelector('.carrossel__container');
+
+carrossel.addEventListener('mouseover', () => {
+    carrossel.style.animationPlayState = 'paused';
+});
+
+carrossel.addEventListener('mouseout', () => {
+    carrossel.style.animationPlayState = 'running';
+});
+</script>
+
 <section class="work" id="work">
     <header class="work__titles">
         <button class="animate animate-left">
