@@ -179,6 +179,12 @@ html, body{
     }
 }
 
+@media (min-width: 1200px){
+    .carrossel__logos{
+        height: 15vh;
+    }
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .carrossel__slide img {
