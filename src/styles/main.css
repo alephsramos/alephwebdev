@@ -185,6 +185,7 @@ body::after {
     .carrossel__logos{
         height: 15vh;
         margin-top: -5%;
+        overflow-x: hidden;
     }
 }
 

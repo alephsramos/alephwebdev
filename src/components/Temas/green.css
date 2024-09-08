@@ -11,6 +11,10 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.carrossel__slide img{
+    filter: invert(100%);
+}
+
 .home__background{
     background-image: url('../../../assets/images/background.png');
     transition: background-color 1s ease, color 0.5s ease;
