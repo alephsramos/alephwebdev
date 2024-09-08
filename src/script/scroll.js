@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateElements.forEach(element => {
       observer.observe(element);
     });
-  }, 1900); // Ajuste o tempo aqui para corresponder ao término do preloader
+  }, 1700); // Ajuste o tempo aqui para corresponder ao término do preloader
 });
 
 
