@@ -226,7 +226,7 @@ body::after {
     .carrossel__track {
         display: flex;
         width: 500%!important; /* Ajuste conforme o número de slides */
-        animation: slide 5s linear infinite alternate-reverse;
+        animation: slide 5s linear infinite;
     }
 
 }
@@ -243,7 +243,7 @@ body::after {
     .carrossel__track {
         display: flex;
         width: 500%!important; /* Ajuste conforme o número de slides */
-        animation: slide 5s linear infinite alternate-reverse;
+        animation: slide 5s linear infinite;
     }
 }
 
