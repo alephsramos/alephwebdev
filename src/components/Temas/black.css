@@ -37,7 +37,7 @@ html{
 }
 
 .home__image img {
-    content: url('../../../assets/images/pc_black.png'); /* Altere para a imagem que você quer no tema black */
+    content: url('../../../assets/images/pc_black.png'); 
     transition: content 0.5s ease;
 }
 

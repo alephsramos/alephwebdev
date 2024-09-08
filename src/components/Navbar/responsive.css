@@ -1,4 +1,4 @@
-@media (max-width: 568px){
+@media (max-width: 569px){
     .nav{
         height: 5vh!important;
         padding: 0 0!important;
@@ -38,6 +38,243 @@
 
     .nav__links ul:nth-child(4){
         display: none;
+    }
+    
+    .nav__links i{
+        font-size: 0.9rem!important;    
+    }
+    
+    .nav__links a{
+        font-size: 0.9rem!important;
+    }
+    
+    .nav span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 569px) and (max-width: 769px) {
+    .nav{
+        height: 5vh!important;
+        padding: 0 0!important;
+        max-width: 100%!important;
+        bottom: 0;
+    }
+    
+    .nav__links{
+        width: 65%!important;
+        height: 100%;
+    }
+
+    .nav__links ul{
+        width: 20%!important;
+    }
+
+    .nav__links ul:hover{
+        transform: scale(1)!important;
+    }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav__links{
+        padding: 2px;    
+    }
+    
+    .nav__links ul{
+        gap: 5px!important;
+        padding: 10px!important;
+    }
+    
+    .nav__links i{
+        font-size: 0.9rem!important;    
+    }
+    
+    .nav__links a{
+        font-size: 0.9rem!important;
+    }
+    
+    .nav span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav{
+        height: 5vh!important;
+        padding: 0 0!important;
+        max-width: 100%!important;
+        bottom: 0;
+    }
+    
+    .nav__links{
+        width: 70%!important;
+        height: 100%;
+    }
+
+    .nav__links ul{
+        width: 20%!important;
+    }
+
+    .nav__links ul:hover{
+        transform: scale(1)!important;
+    }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav__links{
+        padding: 2px;    
+    }
+    
+    .nav__links ul{
+        gap: 5px!important;
+        padding: 10px!important;
+    }
+    
+    .nav__links i{
+        font-size: 0.9rem!important;    
+    }
+    
+    .nav__links a{
+        font-size: 0.9rem!important;
+    }
+    
+    .nav span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1270px){
+    .nav{
+        height: 5vh!important;
+        padding: 0 0!important;
+        max-width: 100%!important;
+        bottom: 0;
+    }
+    
+    .nav__links{
+        width: 65%!important;
+        height: 100%;
+    }
+
+    .nav__links ul{
+        width: 20%!important;
+    }
+
+    .nav__links ul:hover{
+        transform: scale(1)!important;
+    }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav__links{
+        padding: 2px;    
+    }
+    
+    .nav__links ul{
+        gap: 5px!important;
+        padding: 10px!important;
+    }
+    
+    .nav__links i{
+        font-size: 0.9rem!important;    
+    }
+    
+    .nav__links a{
+        font-size: 0.9rem!important;
+    }
+    
+    .nav span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1270px) and (max-width: 1440px){
+    .nav{
+        height: 5vh!important;
+        padding: 0 0!important;
+        max-width: 100%!important;
+        bottom: 0;
+    }
+    
+    .nav__links{
+        width: 40%!important;
+        height: 100%;
+    }
+
+    .nav__links ul{
+        width: 20%!important;
+    }
+
+    .nav__links ul:hover{
+        transform: scale(1)!important;
+    }
+
+    .nav span{
+        font-size: 0.6rem!important;
+        font-weight: 300!important;
+    }
+
+    .nav__links{
+        padding: 2px;    
+    }
+    
+    .nav__links ul{
+        gap: 5px!important;
+        padding: 10px!important;
+    }
+    
+    .nav__links i{
+        font-size: 0.9rem!important;    
+    }
+    
+    .nav__links a{
+        font-size: 0.9rem!important;
+    }
+    
+    .nav span{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1441px){
+    .nav{
+        height: 5vh!important;
+        padding: 0 0!important;
+        max-width: 100%!important;
+        bottom: 0;
+    }
+    
+    .nav__links{
+        width: 40%!important;
+        height: 100%;
+    }
+
+    .nav__links ul{
+        width: 20%!important;
+    }
+
+    .nav__links ul:hover{
+        transform: scale(1)!important;
+    }
+
+    .nav span{
+        font-size: 0.6rem!important;
+        font-weight: 300!important;
+    }
+
+    .nav__links{
+        padding: 2px;    
+    }
+    
+    .nav__links ul{
+        gap: 5px!important;
+        padding: 10px!important;
     }
     
     .nav__links i{
